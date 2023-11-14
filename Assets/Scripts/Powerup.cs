@@ -1,13 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Powerup : MonoBehaviour
 {
+    public enum PowerupType
+    {
+        None,
+        Stretch,
+        Shrink,
+    }
+
+    public PowerupType type;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Picked up by: " +  collision.gameObject.name);
+        if (!collision.gameObject.CompareTag("Player")) return;
+        
+        Player player = collision.gameObject.GetComponent<Player>();
+        player.ApplyPowerup(this);
 
-        // TODO: apply powerup effect
+        Destroy(gameObject);
     }
 }

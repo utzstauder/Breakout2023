@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7546007334001881875}
   - component: {fileID: 322847975746567894}
   m_Layer: 9
-  m_Name: Powerup
+  m_Name: Powerup_Shrink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2321853330362774004, guid: e49205ad75db51048ae5fc6eda85e682, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.36320752, b: 0.36320752, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91874d996567c843b7ff10d71634fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 2
 --- !u!61 &322847975746567894
 BoxCollider2D:
   m_ObjectHideFlags: 0
