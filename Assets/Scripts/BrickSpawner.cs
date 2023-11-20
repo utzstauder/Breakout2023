@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,9 +14,26 @@ public class BrickSpawner : MonoBehaviour
 
     private List<Brick> bricks;
 
+    private int _currentScore = 0;
+    public int CurrentScore
+    {
+        get
+        {
+            return _currentScore;
+        }
+        private set
+        {
+            _currentScore = value;
+            OnScoreChanged?.Invoke(CurrentScore);
+        }
+    }
+    
+    public Action<int> OnScoreChanged;
+    
     private void Start()
     {
         SpawnBricks();
+        CurrentScore = 0;
     }
 
     void SpawnBricks()
@@ -44,6 +63,8 @@ public class BrickSpawner : MonoBehaviour
     {
         print($"Brick {brick.gameObject.name} was hit.");
 
+        CurrentScore += 1;
+        
         if (AreAnyBricksActive() == false)
         {
             LoadNextScene();
