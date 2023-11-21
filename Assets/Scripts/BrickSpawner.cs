@@ -20,6 +20,16 @@ public class BrickSpawner : MonoBehaviour
         SpawnBricks();
     }
 
+    private void OnEnable()
+    {
+        Brick.OnBrickHit += Brick_OnBrickHit;
+    }
+
+    private void OnDisable()
+    {
+        Brick.OnBrickHit -= Brick_OnBrickHit;
+    }
+
     void SpawnBricks()
     {
         bricks = new List<Brick>();
@@ -29,8 +39,6 @@ public class BrickSpawner : MonoBehaviour
             for (int x = 0; x < amount.x; x++)
             {
                 Brick newBrick = Instantiate(brickPrefab);
-
-                newBrick.OnBrickHit += Brick_OnBrickHit;
 
                 newBrick.transform.position = transform.position
                     + (Vector3.right * x * newBrick.transform.localScale.x)

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     public delegate void BrickHitDelegate(Brick brickThatWasHit);
-    public event BrickHitDelegate OnBrickHit;
+    public static event BrickHitDelegate OnBrickHit;
 
     public static event BrickHitDelegate OnBrickDestroyed;
     

@@ -16,14 +16,13 @@ public class PowerupSpawner : MonoBehaviour
     private void Awake()
     {
         brick = GetComponent<Brick>();
-        if (brick != null)
-        {
-            brick.OnBrickHit += Brick_OnBrickHit;
-        }
+        Brick.OnBrickHit += Brick_OnBrickHit;
     }
 
     private void Brick_OnBrickHit(Brick brickThatWasHit)
     {
+        if (brickThatWasHit != brick) return;
+        
         bool willSpawnPowerup = Random.Range(0, 1f) <= spawnChance;
         if (willSpawnPowerup) SpawnPowerup();
     }
