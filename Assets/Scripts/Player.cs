@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Data;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,7 +11,8 @@ public class Player : MonoBehaviour
 
     float input;
 
-    public float speed = 1f;
+    public PlayerData playerData;
+    public float speed => playerData.DefaultSpeed;
 
     void Awake()
     {
@@ -24,7 +26,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody2D.velocity = Vector2.right * input * speed;
+        rigidbody2D.velocity = Vector2.right * (input * speed);
     }
 
     public void ApplyPowerup(Powerup powerup)
