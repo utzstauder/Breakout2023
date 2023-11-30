@@ -207,7 +207,7 @@ TextureImporter:
       213: -5310169930856553062
     second: breakout_sprites(no shadow)_54
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -224,10 +224,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -266,6 +268,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -277,6 +281,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -289,6 +294,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1696,7 +1715,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3b9af9c9edf1f8de0800000000000000
-      internalID: -1328808324080096845
+      internalID: -5310169930856553062
       vertices: []
       indices: 
       edges: []
@@ -1717,7 +1736,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a95a556159c7e46b0800000000000000
-      internalID: -5310169930856553062
+      internalID: -1328808324080096845
       vertices: []
       indices: 
       edges: []
@@ -1732,9 +1751,77 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      ball_l: 4480349801992899043
+      ball_s: -1528135729197343473
+      breakout_sprites(no shadow)_0: 1506890362032457543
+      breakout_sprites(no shadow)_1: -2775865327884618849
+      breakout_sprites(no shadow)_10: 8002900892838781459
+      breakout_sprites(no shadow)_11: -7339708882103100830
+      breakout_sprites(no shadow)_12: -1508215430909401873
+      breakout_sprites(no shadow)_13: 6516736409493343863
+      breakout_sprites(no shadow)_14: -5405507652774939932
+      breakout_sprites(no shadow)_15: 6068530415822006160
+      breakout_sprites(no shadow)_16: 5979334114619268900
+      breakout_sprites(no shadow)_17: 405755379622910988
+      breakout_sprites(no shadow)_18: 5227112564140371211
+      breakout_sprites(no shadow)_19: 614317027829484258
+      breakout_sprites(no shadow)_2: -2698390538145422471
+      breakout_sprites(no shadow)_20: -1177450989900605397
+      breakout_sprites(no shadow)_21: 7275282266340045087
+      breakout_sprites(no shadow)_22: -6358271922747172451
+      breakout_sprites(no shadow)_23: -8299023380009486255
+      breakout_sprites(no shadow)_24: -5080709829479932129
+      breakout_sprites(no shadow)_25: -1757972804410432752
+      breakout_sprites(no shadow)_26: 79139197276929394
+      breakout_sprites(no shadow)_27: -6353473702259394274
+      breakout_sprites(no shadow)_28: -4965411775889152987
+      breakout_sprites(no shadow)_29: -1149950507798555734
+      breakout_sprites(no shadow)_3: -5654831526158011945
+      breakout_sprites(no shadow)_31: -3294078767700949697
+      breakout_sprites(no shadow)_32: -4909248553716678673
+      breakout_sprites(no shadow)_33: 8738618340604926794
+      breakout_sprites(no shadow)_34: -7080903681205841678
+      breakout_sprites(no shadow)_35: 3602047956570153944
+      breakout_sprites(no shadow)_36: -6481469867233576692
+      breakout_sprites(no shadow)_37: 7733491747592203412
+      breakout_sprites(no shadow)_38: -57336604363768695
+      breakout_sprites(no shadow)_39: 744506679744471685
+      breakout_sprites(no shadow)_4: -7935062761452194548
+      breakout_sprites(no shadow)_40: -6033261949165767466
+      breakout_sprites(no shadow)_41: -5558031967212682353
+      breakout_sprites(no shadow)_42: 5447117662717453090
+      breakout_sprites(no shadow)_43: 3172446450945519445
+      breakout_sprites(no shadow)_44: 3746162993584942969
+      breakout_sprites(no shadow)_45: 8366671149783009645
+      breakout_sprites(no shadow)_5: 8347572383732804980
+      breakout_sprites(no shadow)_52: 2321853330362774004
+      breakout_sprites(no shadow)_53: -5310169930856553062
+      breakout_sprites(no shadow)_54: -1328808324080096845
+      breakout_sprites(no shadow)_55: 695406101836530908
+      breakout_sprites(no shadow)_56: 1818763595056696614
+      breakout_sprites(no shadow)_57: 5283628223970164860
+      breakout_sprites(no shadow)_58: 2135189917728929957
+      breakout_sprites(no shadow)_59: -1443651750585870559
+      breakout_sprites(no shadow)_6: -2355574666133592260
+      breakout_sprites(no shadow)_60: -5861875606694915187
+      breakout_sprites(no shadow)_61: 6860251753800636683
+      breakout_sprites(no shadow)_62: -8434058167543341289
+      breakout_sprites(no shadow)_63: 4264002317486089617
+      breakout_sprites(no shadow)_64: 9108429692654165426
+      breakout_sprites(no shadow)_65: 2155743191367952746
+      breakout_sprites(no shadow)_66: 3175015366849280178
+      breakout_sprites(no shadow)_67: 5684313965338945163
+      breakout_sprites(no shadow)_7: 252289121877908323
+      breakout_sprites(no shadow)_70: 5429633752411800853
+      breakout_sprites(no shadow)_71: 8941238229196718873
+      breakout_sprites(no shadow)_8: 7800622233919203714
+      breakout_sprites(no shadow)_9: -2071807231180558963
+      racket_l: 4229838143984813040
+      racket_m: 2957493379103531695
+      racket_s: 529254195052306805
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
